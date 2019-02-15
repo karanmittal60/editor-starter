@@ -143,7 +143,6 @@ class SecondEditor extends Component {
         console.log("==componentDidMount==")
 
         const existingValue = localStorage.getItem('content') || '<p></p>'
-        console.log("==existingValue==", existingValue)
 
         // const initialValue = Plain.deserialize(
         //     existingValue || 'A string of plain text.'
@@ -158,10 +157,7 @@ class SecondEditor extends Component {
     onChange = ({ value }) => {
 
         if (value.document !== this.state.value.document) {
-
-            // const content = html.serialize(value)
             const content = html.serialize(value)
-            console.log("==content==", content)
             localStorage.setItem('content', content )
         }
         this.setState({ value })
@@ -208,11 +204,7 @@ class SecondEditor extends Component {
         console.log("==handleLoadData=")
         const contentFromLocalStorage = localStorage.getItem('content')
         const constentObject = JSON.parse(contentFromLocalStorage)
-        console.log("==constentObject==", constentObject)
-        console.log("==contentFromLocalStorage==", contentFromLocalStorage)
-        // this.setState({
-        //     value: constentObject,
-        // })
+
         this.setState({
             value: constentObject
         })

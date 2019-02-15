@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 // import FirstEditor from './Components/FirstEditor';
 import SecondEditor from './Components/SecondEditor';
+import ThirdEditor from './Components/ThirdEditor';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         <h1>Home</h1>
           {/*<FirstEditor/>*/}
         <SecondEditor />
+          <ThirdEditor/>
 
       </div>
     );
