@@ -3,6 +3,9 @@ import './App.css';
 // import FirstEditor from './Components/FirstEditor';
 import SecondEditor from './Components/SecondEditor';
 import ThirdEditor from './Components/ThirdEditor';
+import RichTextExample from "./Components/RichTextExample";
+import EmoTest from "./Components/EmoTest";
+import CombineTwoEditor from "./Components/CombineTwoEditor";
 
 class App extends Component {
   render() {
@@ -10,8 +13,11 @@ class App extends Component {
       <div className="App">
         <h1>Home</h1>
           {/*<FirstEditor/>*/}
-        <SecondEditor />
-          <ThirdEditor/>
+        {/*<SecondEditor />*/}
+          {/*<ThirdEditor/>*/}
+          {/*<RichTextExample/>*/}
+          <CombineTwoEditor/>
+          {/*<EmoTest/>*/}
 
       </div>
     );
